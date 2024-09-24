@@ -17,14 +17,16 @@ if your project contain it already copy paste the code from these files otherwis
 -------AndroidManifist.xml---------------------------
 ----------------------------------------------------
 Then create the Android Manifist File from Publishing Settings if its not already created.. then at start change the package name as per your project 
-Then Add these lines before <application>
+Then Add these lines before "<application>"
+	
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="BIND_GET_INSTALL_REFERRER_SERVICE" />
 	<uses-permission android:name="com.android.vending.CHECK_LICENSE" />
 	<uses-permission android:name="com.google.android.gms.permission.AD_ID" />
 
-Also add these after <\intent-filter>
+Also add these after "<\intent-filter>"
+
 			<intent-filter android:autoVerify="true">
 				<action android:name="android.intent.action.VIEW" />
 				<category android:name="android.intent.category.DEFAULT" />
